@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wireframe System</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-theme="light">
+    <main id="wireframe-system" class="system-page">
+      <header class="site-header">
+        <div>
+          <p class="eyebrow">Component reference</p>
+          <h1>Wireframe System</h1>
+        </div>
+        <button id="theme-toggle" class="button secondary theme-button" type="button" aria-pressed="false">Dark mode</button>
+      </header>
+
+      <section id="foundations" class="section">
+        <div class="section-heading"><div><p class="eyebrow">01</p><h2>Foundations</h2></div><p>Tokens for low-fidelity work.</p></div>
+        <div class="foundation-grid">
+          <article class="specimen"><h3>Color</h3><div class="swatches"><span class="swatch bg">Canvas</span><span class="swatch surface">Surface</span><span class="swatch accent">Action</span><span class="swatch success">Success</span><span class="swatch danger">Error</span></div></article>
+          <article class="specimen"><h3>Typography</h3><p class="type-title">Section title</p><p class="type-body">Body text and labels for workflow screens.</p><p class="type-meta">Metadata / 12px</p></article>
+          <article class="specimen"><h3>Spacing</h3><div class="spacing-scale"><span>4</span><i style="width: 16px"></i><span>8</span><i style="width: 32px"></i><span>16</span><i style="width: 64px"></i><span>32</span><i style="width: 96px"></i></div></article>
+          <article class="specimen"><h3>Shape</h3><div class="shape-row"><span class="radius-sample">Radius</span><span class="shadow-sample">Shadow</span></div></article>
+        </div>
+      </section>
+
+      <section id="actions" class="section">
+        <div class="section-heading"><div><p class="eyebrow">02</p><h2>Actions</h2></div></div>
+        <div class="component-grid">
+          <article class="specimen"><h3>Button</h3><div class="button-row"><button class="button primary" type="button">Create item</button><button class="button secondary" type="button">Cancel</button><button class="button secondary" type="button" disabled>Disabled</button></div></article>
+          <article class="specimen"><h3>Icon button</h3><div class="button-row"><button class="icon-button" type="button" aria-label="Search">??/button><button class="icon-button" type="button" aria-label="More actions">?™™?/button><button class="icon-button" type="button" aria-label="Close">횞</button></div></article>
+        </div>
+      </section>
+
+      <section id="forms" class="section">
+        <div class="section-heading"><div><p class="eyebrow">03</p><h2>Forms</h2></div><p>Default, error, and disabled examples.</p></div>
+        <div class="component-grid form-grid">
+          <label class="field"><span>Project name</span><input value="Budget review" aria-label="Project name"></label>
+          <label class="field error"><span>Owner email</span><input value="not-an-email" aria-invalid="true"><small>Enter a valid email.</small></label>
+          <label class="field"><span>Notes</span><textarea rows="3" placeholder="Add context for the team"></textarea></label>
+          <label class="field"><span>Status</span><select><option>In progress</option><option>Planned</option><option>Complete</option></select></label>
+          <article class="specimen compact"><h3>Choices</h3><label class="choice"><input type="checkbox" checked> Notify collaborators</label><label class="choice"><input type="radio" name="visibility" checked> Team only</label><label class="choice"><input type="radio" name="visibility"> Everyone</label></article>
+          <article class="specimen compact"><h3>Switch</h3><label class="switch"><input type="checkbox" checked><span class="switch-track"></span><span>Auto-save changes</span></label><label class="switch"><input type="checkbox"><span class="switch-track"></span><span>Allow comments</span></label></article>
+        </div>
+      </section>
+
+      <section id="feedback" class="section">
+        <div class="section-heading"><div><p class="eyebrow">04</p><h2>Feedback</h2></div></div>
+        <div class="component-grid">
+          <article class="specimen"><h3>Alert</h3><p class="alert info">Changes are visible to collaborators.</p><p class="alert danger-alert">Two fields need attention.</p></article>
+          <article class="specimen"><h3>Badge</h3><div class="badge-row"><span class="badge neutral">Draft</span><span class="badge progress">In progress</span><span class="badge success-badge">Complete</span></div></article>
+          <article class="specimen"><h3>Toast</h3><div class="toast"><strong>Saved</strong><span>Changes were stored.</span></div></article>
+          <article class="specimen"><h3>Spinner</h3><div class="spinner-row"><span class="spinner" aria-label="Loading"></span><span>Loading preview</span></div></article>
+        </div>
+      </section>
+
+      <section id="data-layout" class="section">
+        <div class="section-heading"><div><p class="eyebrow">05</p><h2>Data &amp; Layout</h2></div></div>
+        <div class="component-grid two-wide">
+          <article class="specimen"><h3>Card</h3><div class="mini-card"><div><span class="badge progress">In progress</span><h4>Design review</h4><p>Updated today by Mia</p></div><button class="icon-button" type="button" aria-label="Card actions">?™™?/button></div></article>
+          <article class="specimen"><h3>Tabs &amp; pagination</h3><div class="tabs" role="tablist"><button role="tab" aria-selected="true">Overview</button><button role="tab" aria-selected="false">Activity</button><button role="tab" aria-selected="false">Files</button></div><nav class="pagination" aria-label="Pagination"><button class="icon-button" type="button" aria-label="Previous page">??/button><button class="page-active" type="button">1</button><button type="button">2</button><button type="button">3</button><button class="icon-button" type="button" aria-label="Next page">??/button></nav></article>
+        </div>
+        <article class="specimen table-specimen"><h3>Table</h3><div class="table-wrap"><table><thead><tr><th>Task</th><th>Owner</th><th>Status</th><th>Due</th></tr></thead><tbody><tr><td>Write brief</td><td>Hana</td><td><span class="badge progress">In progress</span></td><td>Jul 25</td></tr><tr><td>Confirm scope</td><td>Min</td><td><span class="badge neutral">Draft</span></td><td>Jul 26</td></tr><tr><td>Share notes</td><td>Jin</td><td><span class="badge success-badge">Complete</span></td><td>Jul 24</td></tr></tbody></table></div></article>
+      </section>
+
+      <section id="navigation-overlay" class="section">
+        <div class="section-heading"><div><p class="eyebrow">06</p><h2>Navigation &amp; Overlay</h2></div></div>
+        <div class="component-grid">
+          <article class="specimen"><h3>Breadcrumb</h3><nav class="breadcrumb" aria-label="Breadcrumb"><a href="#foundations">Workspace</a><span>/</span><a href="#patterns">Projects</a><span>/</span><strong>Design review</strong></nav></article>
+          <article class="specimen dropdown-specimen"><h3>Dropdown</h3><button id="dropdown-toggle" class="button secondary" type="button" aria-expanded="false">More actions <span>??/span></button><div id="demo-dropdown" class="dropdown-menu" hidden><button type="button">Duplicate</button><button type="button">Archive</button></div></article>
+          <article class="specimen"><h3>Modal</h3><button id="modal-open" class="button primary" type="button">Open confirmation</button></article>
+        </div>
+      </section>
+
+      <section id="patterns" class="section section-last">
+        <div class="section-heading"><div><p class="eyebrow">07</p><h2>Patterns</h2></div><p>Common arrangements for collaborative work.</p></div>
+        <div class="pattern-grid">
+          <article class="pattern"><h3>Search &amp; filter bar</h3><div class="filter-bar"><input aria-label="Search items" placeholder="Search items"><button class="button secondary" type="button">Status: Any ??/button><button class="icon-button" type="button" aria-label="Filter options">??/button></div></article>
+          <article class="pattern"><h3>List row</h3><div class="list-row"><input type="checkbox" aria-label="Select task"><div><strong>Prepare project summary</strong><p>Due tomorrow 쨌 2 comments</p></div><span class="badge progress">In progress</span><button class="icon-button" type="button" aria-label="Row actions">?™™?/button></div></article>
+          <article class="pattern empty-state"><div class="empty-icon">??/div><h3>No files yet</h3><p>Upload a file or create a shared note.</p><button class="button secondary" type="button">Add file</button></article>
+          <article class="pattern"><h3>Confirmation</h3><p>Use the modal pattern for a destructive or irreversible action.</p><button class="button danger-button" type="button">Archive project</button></article>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="demo-modal" aria-labelledby="modal-title">
+      <div class="modal-content"><p class="eyebrow">Confirm action</p><h2 id="modal-title">Archive this project?</h2><p>It will be removed from active workspaces. You can restore it later.</p><div class="modal-actions"><button data-close-modal class="button secondary" type="button">Cancel</button><button class="button danger-button" type="button">Archive</button></div></div>
+    </dialog>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
+
